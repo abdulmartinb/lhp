@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Libre+Baskerville&family=Playfair+Display:ital@1&family=Quicksand:wght@300&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Libre+Baskerville&family=Playfair+Display:ital@1&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Kalnia:wght@300&family=Lato:wght@300&family=Libre+Baskerville&family=M+PLUS+Rounded+1c:wght@100&family=Merriweather&family=PT+Sans&family=Playfair+Display:ital@1&family=Quicksand:wght@300&family=Roboto+Condensed:ital,wght@0,200;0,400;1,300&family=Work+Sans:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Kalnia:wght@300&family=Lato:wght@300&family=Libre+Baskerville&family=M+PLUS+Rounded+1c:wght@100&family=Merriweather&family=PT+Sans&family=Playfair+Display:ital@1&family=Quicksand:wght@300&family=Roboto+Condensed:ital,wght@0,200;0,400;1,300&family=Roboto:ital@1&family=Work+Sans:ital,wght@0,100;0,300;0,500;1,100;1,300&display=swap" rel="stylesheet">
+    <style>
+
+*{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+body{
+background-color: black;
+    margin: 0%;
+    padding: 0%;
+}
+  
+html{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+scrollbar-width: none;
+
+-ms-overflow-style: none;
+}
+      ul{
+          list-style-type: none;
+          margin: 0%;
+          padding: 0% 0.625em;
+        overflow: hidden;
+        display: flex; 
+         justify-content: space-between;
+          top: 0%;
+           width: 100%;      
+     background-color: black;
+         
+        
+        }
+        header{
+            position: fixed;
+            width: 100%;
+            background-color: black;
+            z-index: 999999999999999999999999999999999999999999999999999999;  
+        }
+        .navbar{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+      li{
+        float: left;
+        margin: 0%;
+      }
+
+      li::after{
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      li a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding-top: 1.2rem;       
+        margin: 15px 2.5em;
+        padding-bottom: 5px;
+        text-decoration: none;
+        position: relative;
+        text-transform: uppercase;
+        top: 15px;
+        font-family: 'Inconsolata', monospace;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto Condensed', sans-serif;
+      }
+      li a:hover{
+       color: gold;
+      }
+li .active{
+   color: #cbedd5;
+}
+
+
+.long{
+    font-family: 'Inconsolata', monospace;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-size: 30px;
+display: flex;
+margin-top: 0%;
+padding-top: 0%;
+}
+#none{
+    padding-right: 0%;
+    margin-right: 0%;
+}
+
+ul li a:before{
+    position: absolute;
+    content:'' ;
+    left: 0%;
+    bottom: 0%;
+    height: 3px;
+    width: 100%;
+    background-color: gold;
+    transform: scale(0%);
+    transform-origin: right;
+}
+ul li a:hover:before{
+    transform: scale(1);
+    transform-origin: left;
+    transition: transform .4s linear;
+}
+  
+.container{
+    color: white;
+    margin-top: 200px;
+    margin-left: 120px;
+    font-family: 'Inconsolata', monospace;
+font-family: 'Kalnia', serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'M PLUS Rounded 1c', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Work Sans', sans-serif;
+font-weight: 500;
+}
+ span{
+    font-family: 'Inconsolata', monospace;
+font-family: 'Kalnia', serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'M PLUS Rounded 1c', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Work Sans', sans-serif;
+font-size: 1.2rem;
+font-weight: 900;
+}
+
+h1{
+    font-size: 3rem;
+    font-family: 'Inconsolata', monospace;
+font-family: 'Kalnia', serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'M PLUS Rounded 1c', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Work Sans', sans-serif;
+}
+
+footer{
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 0%;
+}
+
+@media (max-width: 1024px){
+    footer{
+    
+    margin-top: 870px;
+}
+}
+
+@media (max-width:820px){
+    footer{
+
+    margin-top: 670px;
+    }
+}
+
+
+@media (max-width:768px){
+
+    *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+    body{
+    background-color:black;
+    width: 100%;
+    position: static;
+    margin: 0%;
+  }
+
+  html{
+    margin: 0%;
+  }
+  
+  body::-webkit-scrollbar{
+    display: none;
+}
+
+div{
+    overflow-x: hidden;
+}
+
+
+        
+body{
+scrollbar-width: none;
+
+-ms-overflow-style: none;
+}
+    .navbar{
+    flex-direction: column;
+    text-align: center;
+    right: 0%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ul{
+    flex-direction: column;
+}
+.long a {
+    
+        display: inline;
+        margin: 0%;
+}
+
+.long ul{
+    margin: 0%;
+    padding: 0%;
+}
+
+li{
+        margin: 0%;
+        display: flex;
+      }
+header{
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    position: static;
+}
+
+.navbar li {
+    margin: 0.5em 0%;
+}
+.navbar ul{
+    margin-top: 0%;
+}
+
+.navbar ul li a {
+    padding-top: 0%;
+
+}
+
+.container{
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+footer{
+    
+    margin-top: 230px;
+}
+}
+   
+
+      </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+               
+                <ul>
+                    <li class="long  "><a  href="./index.html">LHP</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="ulnav">
+                    
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./contact.html" class="active" >Contact</a></li>
+                    <li ><a href="./address.html">Address</a></li>
+                    <li ><a href="./about.html" id="none">About</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+<br/>
+<br/>
+<br/>
+<div class="container">
+<h1>Contact</h1>
+</br>
+</br>
+</br>
+</br>
+<p>
+
+    <div class="text"><span><b>Email:</b></span> lhphotography@gmail.com</div>
+</br>
+    <div class="text"><span >Phone:</span> 123-456-7890</div>
+
+</p>
+</div>
+   
+<div class="foot"><footer>© 2023 by Lens Harmony</footer></div>
+</body>
+</html>

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Libre+Baskerville&family=Playfair+Display:ital@1&family=Quicksand:wght@300&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Libre+Baskerville&family=Playfair+Display:ital@1&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Kalnia:wght@300&family=Lato:wght@300&family=Libre+Baskerville&family=M+PLUS+Rounded+1c:wght@100&family=Playfair+Display:ital@1&family=Quicksand:wght@300&family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+<style>
+    *{
+               margin: 0%;
+               padding: 0%;
+               box-sizing: border-box;
+           }
+   body{
+   background-color: black;
+       margin: 0%;
+       padding: 0%;
+       width: 100%;
+   }
+     
+   html{
+       width: 100%;
+       margin: 0%;
+       padding: 0%;
+       height: 100%;
+   }
+   body::-webkit-scrollbar{
+       display: none;
+   }
+   
+   body{
+   scrollbar-width: none;
+   
+   -ms-overflow-style: none;
+   }
+         ul{
+             list-style-type: none;
+             margin: 0%;
+             padding: 0% 0.625em;
+           overflow: hidden;
+           display: flex; 
+            justify-content: space-between;
+             top: 0%;
+              width: 100%;      
+        background-color: black;
+            
+           
+           }
+           header{
+                width: 100%;
+               background-color: black;
+               z-index: 999999999999999999999999999999999999999999999999999999;  
+           }
+           .navbar{
+               width: 100%;
+               display: flex;
+               justify-content:space-evenly;
+               
+           }
+         li{
+           float: left;
+           margin: 0%;
+         }
+   
+         li::after{
+           content: "";
+           display: block;
+           clear: both;
+         }
+   
+         li a{
+           display: block;
+           color: white;
+           text-align: center;
+           padding-top: 1.2rem;       
+           margin: 15px 1em;
+           padding-bottom: 5px;
+           text-decoration: none;
+           position: relative;
+           text-transform: uppercase;
+           top: 15px;
+           font-family: 'Inconsolata', monospace;
+   font-family: 'Libre Baskerville', serif;
+   font-family: 'Playfair Display', serif;
+   font-family: 'Roboto Condensed', sans-serif;
+         }
+   
+         li a:hover{
+          color: gold;
+         }
+   li .active{
+      color: #cbedd5;
+   }
+   
+   
+   .long{
+       float: left;
+       padding-right: 600px;
+       font-family: 'Inconsolata', monospace;
+   font-family: 'Libre Baskerville', serif;
+   font-family: 'Playfair Display', serif;
+   font-family: 'Quicksand', sans-serif;
+   font-family: 'Roboto Condensed', sans-serif;
+   font-size: 30px;
+   margin: 0%;
+   }
+   
+   
+   
+   ul li a:before{
+       position: absolute;
+       content:'' ;
+       left: 0%;
+       bottom: 0%;
+       height: 3px;
+       width: 100%;
+       background-color: gold;
+       transform: scale(0%);
+       transform-origin: right;
+   }
+   ul li a:hover:before{
+       transform: scale(1);
+       transform-origin: left;
+       transition: transform .4s linear;
+   }
+   .container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 5px 20px 0px 20px ;
+      padding: 50px;
+   }
+   .p{
+       color: white;
+       margin: auto;
+       margin-bottom: 70px;
+       text-align: center;
+       width: 100%;
+        padding: 0%;
+      border-left: 3px solid white ;
+     border-bottom: 3px solid white ;
+      border-radius: 5px;
+      padding-top: 10px;
+      padding-bottom: 3px;
+     font-variant: small-caps;
+     letter-spacing: 6px;
+       border-bottom: 2px solid white;
+       font-family: 'Inconsolata', monospace;
+   font-family: 'Kalnia', serif;
+   font-family: 'Lato', sans-serif;
+   font-family: 'Libre Baskerville', serif;
+   font-family: 'M PLUS Rounded 1c', sans-serif;
+   font-family: 'Playfair Display', serif;
+   font-family: 'Quicksand', sans-serif;
+   font-family: 'Roboto Condensed', sans-serif;
+   }
+   .container .box{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+   }
+   
+   .container .box .dream{
+       display: flex;
+       flex-direction: column;
+       width: 32.5%;
+       padding-left: 10px;
+   }
+   #dream{
+    padding-left: 0%;   
+   }
+   .container .box .dream img{
+       width: 100%;
+   padding-bottom: 20px;
+   border-radius: 5px;
+   padding-bottom: 0%;
+   margin-bottom: 20px;
+   
+   }
+   footer{
+       color: white;
+       width: 100%;
+       text-align: center;
+       margin-top: 100px;
+       margin-bottom: 0%;
+   }
+   
+   img{
+       transition: transform 2s, filter 1.5s ease-in-out;
+     transform-origin: center center;
+     filter: brightness(60%);
+   }
+   
+   img:hover{
+       filter: brightness(100%);
+     transform: scale(1.05);
+   border: 2px solid white;
+   }
+     
+   
+   
+   
+   @media (max-width:1024px) and (min-width:769px){
+   
+       header .navbar ul li .port{
+       margin-left: 0%;
+   }
+   .navbar .longul{
+       margin: 0%;
+       padding: 0%;
+       width: 600px;
+   }
+   
+   }
+   @media (max-width:912px){
+       .navbar .longul{
+       margin: 0%;
+       padding: 0%;
+       width: 500px;
+   }
+   }
+   @media (max-width:820px) and (min-width:769px){
+       .navbar .longul{
+       margin: 0%;
+       padding: 0%;
+       width: 400px;
+   }
+   }
+   @media (max-width:768px){
+       *{
+               margin: 0%;
+               padding: 0%;
+               box-sizing: border-box;
+           }
+   
+       body{
+       width: 100%;
+       position: static;
+       background-color: black;
+     }
+     
+     body::-webkit-scrollbar{
+       display: none;
+   }
+   
+   div{
+       overflow-x: hidden;
+   }
+   
+   
+           
+   body{
+   scrollbar-width: none;
+   
+   -ms-overflow-style: none;
+   }
+       .navbar{
+       flex-direction: column;
+       text-align: center;
+       right: 0%;
+       justify-content: center;
+       align-items: center;
+   
+   }
+   
+   ul{
+       flex-direction: column;
+   }
+   .long{
+       margin: 0%;
+       position: relative;
+       padding-left:50px;
+       left:35%
+   }
+   .long a {
+       
+           display: inline;
+           margin: 0%;
+   }
+   
+   
+   li{
+           margin: 0%;
+           display: flex;
+         }
+         li a{
+           padding: 0%;
+         } 
+   header{
+       text-align: center;
+       margin: 0%;
+       padding: 0%;
+       position: relative;
+   }
+   
+   .navbar li {
+       margin: 0.5em 0%;
+       margin-top: 0%;
+   }
+   .navbar ul{
+       margin-top: 0%;
+   }
+   
+   .navbar ul li a {
+       padding-top: 0%;
+   }
+   
+   .container{
+       margin: 0%;
+       margin-top: 50px;
+       width: 100%;
+       padding: 0%;
+   }
+   
+   .container .box{
+    flex-direction: column;
+    width: 100%;
+   
+   }
+   
+   .container .box .dream{
+       width: 100%;
+       padding: 0%;
+   }
+   .container .box .dream img{
+       max-width: 100%;
+       height: auto;
+       object-fit: contain;
+   }
+   
+   img{
+       transition: transform 2s, filter 1.5s ease-in-out;
+     transform-origin: center center;
+     filter: brightness(60%);
+   }
+   
+   img:hover{
+       filter: brightness(100%);
+     transform: scale(1.05);
+   border: 2px solid white;
+   }
+   
+   .p{
+       width: 95%;
+       margin: 70px 0% 70px 0% ;
+       padding:0%;
+   }
+   }
+   
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <ul class="longul">
+                    <li class="long"><a  href="./index.html">LHP</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="ulnav">
+                    
+                    <li ><a href="./portfolio.html" class="active" >Portfolio</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li ><a href="./address.html">Address</a></li>
+                    <li ><a href="./about.html" id="none">About</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+<br/>
+<br/>
+<br/>
+
+    <div class="container">
+        <h1 class="p">Fashion</h1>
+
+        <div class="box">
+
+            <div class="dream" id="dream">
+                <a  href="./fg1.jpeg" download="Img">
+                    <img src="./fg1.jpeg" alt=" 2 models" height="250" width="450" class="pe1"/>
+                    </a>
+
+                    <a href="./fg2.jpeg" download="Img">
+                        <img src="./fg2.jpeg" alt="Female and male model" height="600"/>
+                    </a>
+
+                    <a href="./pe3.jpeg" download="Img">
+                        <img src="./fg3.jpeg" alt="A male model" height="250" />
+                    </a>
+       <a  href="./fg4.jpeg" download="Img">
+        <img src="./fg4.jpeg" alt="Suits"/>
+       </a>
+            </div>
+
+
+            <div class="dream" >
+                
+                
+                <a  href="./fg5.jpeg" download="Img">
+                    <img src="./fg5.jpeg" alt="A female model" height="600" />
+                </a>
+    
+                <a  href="./fg6.jpeg" download="Img">
+                    <img src="./fg6.jpeg" alt="A female model" height="250"  />
+                </a>
+
+                <a  href="./fg7.jpeg" download="Img">
+                    <img src="./fg7.jpeg" alt="A female model"/>
+                   </a>
+                
+               
+
+              
+            </div>
+
+              <div class="dream" >
+                <a  href="./fg8.jpeg" download="Img">
+                    <img src="./fg8.jpeg" alt="A female model" height="250" />
+                </a>
+               
+                <a  href="./fg9.jpeg" download="Img">
+                    <img src="./fg9.jpeg" alt="A rounded spec" height="250" />
+                </a>
+               <a  href="./fg10.jpeg" download="Img">
+
+                <img src="./fg10.jpeg" alt="A female model" height=""  />
+               </a>
+<a  href="./fg11.jpeg" download="Img">
+    <img src="./fg11.jpeg" alt="2 female models"/>
+</a>
+
+                </div>
+        </div>
+
+    </div>
+<div class="foot"><footer>© 2023 by Lens Harmony</footer></div>
+        
+</body>
+</html>
